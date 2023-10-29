@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 String input = metersInput.getText().toString();
                 if (!input.isEmpty()) {
                     double meters = Double.parseDouble(input);
-                    double millimeters = meters * 1000; // Conversion
+                    double millimeters = meters * 1000;
                     millimetersOutput.setText(millimeters + " millimeters");
                 } else {
                     millimetersOutput.setText("Please enter a valid value");
