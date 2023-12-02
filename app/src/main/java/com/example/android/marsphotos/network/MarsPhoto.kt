@@ -17,6 +17,9 @@
 package com.example.android.marsphotos.network
 
 import com.squareup.moshi.Json
+import retrofit2.Retrofit
+import retrofit2.converter.scalars.ScalarsConverterFactory
+import retrofit2.http.GET
 
 /**
  * This data class defines a Mars photo which includes an ID, and the image URL.
@@ -27,3 +30,4 @@ data class MarsPhoto(
         // used to map img_src from the JSON to imgSrcUrl in our class
         @Json(name = "img_src") val imgSrcUrl: String
 )
+
